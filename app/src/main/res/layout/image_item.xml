@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_boundary">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="2dp"
+            android:background="@drawable/bg_boundary"
+            android:id="@+id/img_url"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_below="@id/img_url"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textSize="12sp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:id="@+id/txt_title"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_below="@id/txt_title"
+            android:textSize="12sp"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:id="@+id/txt_hex"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:src="@drawable/unlike"
+        android:id="@+id/heart_btn"
+        android:padding="@dimen/dp_10"/>
+
+</FrameLayout>
